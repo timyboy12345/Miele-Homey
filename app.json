@@ -16,9 +16,15 @@
     "en": "Wash, cook and roast when you want it to happen!",
     "nl": "Was, kook en braad wanneer jij wilt dat het gebeurt!"
   },
-  "category": [
-    "tools"
-  ],
+  "category": "appliances",
+  "tags": {
+    "en": [
+      "miele"
+    ],
+    "nl": [
+      "miele"
+    ]
+  },
   "permissions": [],
   "contributing": {
     "donate": {
@@ -29,29 +35,13 @@
   },
   "images": {
     "small": "/assets/images/small.jpg",
-    "large": "/assets/images/large.jpg"
+    "large": "/assets/images/large.jpg",
+    "xlarge": "/assets/images/xlarge.jpg"
   },
   "author": {
     "name": "Tim Arendsen"
   },
-  "api": {
-    "getLog": {
-      "method": "get",
-      "path": "/getLog/"
-    },
-    "getDetect": {
-      "method": "get",
-      "path": "/getDetect/"
-    },
-    "clearLog": {
-      "method": "post",
-      "path": "/clearLog/"
-    },
-    "sendLog": {
-      "method": "post",
-      "path": "/sendLog/"
-    }
-  },
+  "source": "https://github.com/timyboy12345/Miele-Homey",
   "drivers": [
     {
       "id": "dryer",
@@ -149,7 +139,8 @@
       "setable": false,
       "uiComponent": "sensor",
       "uiQuickAction": false,
-      "icon": "/assets/battery.svg"
+      "icon": "/assets/battery.svg",
+      "insights": true
     },
     "status": {
       "type": "string",
@@ -161,7 +152,8 @@
       "setable": false,
       "uiComponent": "sensor",
       "uiQuickAction": false,
-      "icon": "/assets/battery.svg"
+      "icon": "/assets/battery.svg",
+      "insight": true
     }
   }
 }

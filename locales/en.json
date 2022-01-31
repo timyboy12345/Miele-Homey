@@ -16,48 +16,5 @@
         "confirmSend": "Send the log contents to the developer?\n** All identifiers will be removed **",
         "logSent": "The log has been sent.",
         "logSendFailed": "Failed to send after 5 attempts.\nThe error messages are at the end of the log."
-    },
-    "doorlockstatusvehicle": {
-        "0": "Unlocked",
-        "1": "Internal Locked",
-        "2": "External Locked",
-        "3": "Selective Unlocked"
-    },
-    "doorlockstatusdecklid": {
-        "true": "Unlocked",
-        "false": "Locked"
-    },
-    "doorlockstatusgas": {
-        "true": "Unlocked",
-        "false": "Locked"
-    },
-    "sunroofstatus": {
-        "0": "Closed",
-        "1": "Full Open",
-        "2": "Tilted",
-        "3": "Running",
-        "4": "AntiBooming",
-        "5": "Slide Intermediate",
-        "6": "Tilt Intermediate"
-    },
-    "windowstatus": {
-        "0": "Partial",
-        "1": "Open",
-        "2": "Closed",
-        "3": "Airing",
-        "4": "Partial Airing",
-        "5": "Running"
-    },
-    "doorstatus": {
-        "true": "Open",
-        "false": "Closed"
-    },
-    "decklidstatus": {
-        "true": "Open",
-        "false": "Closed"
-    },
-    "interiorlights": {
-        "true": "On",
-        "false": "Off"
     }
 }

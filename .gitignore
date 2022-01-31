@@ -2,5 +2,5 @@ env.json
 node_modules/
 build/
 
-# Added by Homey CLI
+# Homey Production Build
 /.homeybuild/

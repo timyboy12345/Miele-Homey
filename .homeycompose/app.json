@@ -17,8 +17,8 @@
     },
     "category": "appliances",
     "tags": {
-        "en": "miele",
-        "nl": "miele"
+        "en": ["miele"],
+        "nl": ["miele"]
     },
     "permissions": [],
     "contributing": {
@@ -36,5 +36,5 @@
     "author": {
         "name": "Tim Arendsen"
     },
-    "source": "https://github.com/timyboy12345."
+    "source": "https://github.com/timyboy12345/Miele-Homey"
 }

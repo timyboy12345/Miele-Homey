@@ -1,0 +1,20 @@
+{
+    "settings": {
+        "settings": "Instellingen",
+        "detected": "Gedetecteerd",
+        "diagnosticsLog": "Diagnostics Log",
+        "subtitle": "Applicatieinstellingen",
+        "accountDetails": "Accountinformatie",
+        "ClientID": "Client ID",
+        "ClientSecret": "Client Secret",
+        "saveChanges": "Opslaan",
+        "clearLog": "Log legen",
+        "sendLog": "Log versturen",
+        "detectedDescription": "** Deel deze informatie niet publiekelijk! **",
+        "logEnabled": "Log ingeschakeld",
+        "saved": "Instellingen zijn opgeslagen",
+        "confirmSend": "Verstuur deze data naar de developer?\n** Alle persoonlijke informatie wordt verwijderd **",
+        "logSent": "Log is verstuurd.",
+        "logSendFailed": "Log kon niet worden verzonden na 5 pogingen.\nEventuele errors zijn aan het einde van de log geplaatst."
+    }
+}

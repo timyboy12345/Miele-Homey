@@ -8,5 +8,6 @@
   "setable": false,
   "uiComponent": "sensor",
   "uiQuickAction": false,
-  "icon": "/assets/battery.svg"
+  "icon": "/assets/battery.svg",
+  "insights": true
 }
