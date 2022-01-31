@@ -12,11 +12,18 @@
   ],
   "class": "other",
   "capabilities": [
+    "program_id",
     "status",
-    "program_phase",
     "program_type",
+    "program_phase",
     "remaining_time",
-    "spinning_speed"
+    "start_time",
+    "signal_info",
+    "signal_failure",
+    "remote_enable",
+    "elapsed_time",
+    "drying_step",
+    "eco_feedback"
   ],
   "images": {
     "small": "/drivers/dryer/assets/images/small.jpg",

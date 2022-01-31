@@ -1,12 +1,13 @@
 {
   "type": "string",
   "title": {
-    "en": "Program Type",
-    "nl": "Programmatype"
+    "en": "Eco Feedback",
+    "nl": "Eco Feedback"
   },
   "getable": true,
   "setable": false,
   "uiComponent": "sensor",
   "uiQuickAction": false,
-  "icon": "/assets/capabilities/bookmark.svg"
+  "icon": "/assets/capabilities/droplet.svg",
+  "insight": true
 }

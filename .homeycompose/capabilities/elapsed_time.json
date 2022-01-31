@@ -1,17 +1,16 @@
 {
   "type": "number",
   "title": {
-    "en": "Spinning Speed",
-    "nl": "Toerental"
+    "en": "Elapsed Time",
+    "nl": "Voorbijgegaande Tijd"
   },
   "getable": true,
   "setable": false,
   "uiComponent": "sensor",
   "uiQuickAction": false,
-  "icon": "/assets/capabilities/aperture.svg",
-  "insights": true,
+  "icon": "/assets/capabilities/clock.svg",
   "units": {
-    "en": "RPM",
-    "nl": "RPM"
+    "en": "Minutes",
+    "nl": "Minuten"
   }
 }

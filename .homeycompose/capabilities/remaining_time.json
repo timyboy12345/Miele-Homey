@@ -8,5 +8,9 @@
   "setable": false,
   "uiComponent": "sensor",
   "uiQuickAction": false,
-  "icon": "/assets/battery.svg"
+  "icon": "/assets/capabilities/clock.svg",
+  "units": {
+    "en": "Minutes",
+    "nl": "Minuten"
+  }
 }

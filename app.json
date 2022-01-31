@@ -57,11 +57,18 @@
       ],
       "class": "other",
       "capabilities": [
+        "program_id",
         "status",
-        "program_phase",
         "program_type",
+        "program_phase",
         "remaining_time",
-        "spinning_speed"
+        "start_time",
+        "signal_info",
+        "signal_failure",
+        "remote_enable",
+        "elapsed_time",
+        "drying_step",
+        "eco_feedback"
       ],
       "images": {
         "small": "/drivers/dryer/assets/images/small.jpg",
@@ -93,6 +100,60 @@
     }
   ],
   "capabilities": {
+    "drying_step": {
+      "type": "string",
+      "title": {
+        "en": "Drying Step",
+        "nl": "Droog Stap"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "uiQuickAction": false,
+      "icon": "/assets/capabilities/wind.svg",
+      "insight": true
+    },
+    "eco_feedback": {
+      "type": "string",
+      "title": {
+        "en": "Eco Feedback",
+        "nl": "Eco Feedback"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "uiQuickAction": false,
+      "icon": "/assets/capabilities/droplet.svg",
+      "insight": true
+    },
+    "elapsed_time": {
+      "type": "number",
+      "title": {
+        "en": "Elapsed Time",
+        "nl": "Voorbijgegaande Tijd"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "uiQuickAction": false,
+      "icon": "/assets/capabilities/clock.svg",
+      "units": {
+        "en": "Minutes",
+        "nl": "Minuten"
+      }
+    },
+    "program_id": {
+      "type": "string",
+      "title": {
+        "en": "Program",
+        "nl": "Programma"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "uiQuickAction": false,
+      "icon": "/assets/capabilities/arrow-right-circle.svg"
+    },
     "program_phase": {
       "type": "string",
       "title": {
@@ -103,7 +164,7 @@
       "setable": false,
       "uiComponent": "sensor",
       "uiQuickAction": false,
-      "icon": "/assets/battery.svg"
+      "icon": "/assets/capabilities/arrow-right.svg"
     },
     "program_type": {
       "type": "string",
@@ -115,7 +176,7 @@
       "setable": false,
       "uiComponent": "sensor",
       "uiQuickAction": false,
-      "icon": "/assets/battery.svg"
+      "icon": "/assets/capabilities/bookmark.svg"
     },
     "remaining_time": {
       "type": "number",
@@ -127,7 +188,47 @@
       "setable": false,
       "uiComponent": "sensor",
       "uiQuickAction": false,
-      "icon": "/assets/battery.svg"
+      "icon": "/assets/capabilities/clock.svg",
+      "units": {
+        "en": "Minutes",
+        "nl": "Minuten"
+      }
+    },
+    "remote_enable": {
+      "type": "boolean",
+      "title": {
+        "en": "Remote Enable",
+        "nl": "Remote Enable"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "uiQuickAction": false,
+      "icon": "/assets/capabilities/bluetooth.svg"
+    },
+    "signal_failure": {
+      "type": "boolean",
+      "title": {
+        "en": "Warnings Present",
+        "nl": "Waarschuwingen Aanwezig"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "uiQuickAction": false,
+      "icon": "/assets/capabilities/x-octagon.svg"
+    },
+    "signal_info": {
+      "type": "boolean",
+      "title": {
+        "en": "Messages Present",
+        "nl": "Berichten Aanwezig"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "uiQuickAction": false,
+      "icon": "/assets/capabilities/alert-octagon.svg"
     },
     "spinning_speed": {
       "type": "number",
@@ -139,8 +240,24 @@
       "setable": false,
       "uiComponent": "sensor",
       "uiQuickAction": false,
-      "icon": "/assets/battery.svg",
-      "insights": true
+      "icon": "/assets/capabilities/aperture.svg",
+      "insights": true,
+      "units": {
+        "en": "RPM",
+        "nl": "RPM"
+      }
+    },
+    "start_time": {
+      "type": "number",
+      "title": {
+        "en": "Start Time",
+        "nl": "Starttijd"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "uiQuickAction": false,
+      "icon": "/assets/capabilities/clock.svg"
     },
     "status": {
       "type": "string",
@@ -152,7 +269,7 @@
       "setable": false,
       "uiComponent": "sensor",
       "uiQuickAction": false,
-      "icon": "/assets/battery.svg",
+      "icon": "/assets/capabilities/power.svg",
       "insight": true
     }
   }

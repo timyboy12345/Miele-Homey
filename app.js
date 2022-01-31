@@ -4,7 +4,7 @@ const Homey = require('homey');
 const {OAuth2App} = require('/lib/homey-oauth2app');
 const MieleAtHomeOAuthClient = require('./lib/MieleAtHomeOauth2Client');
 
-module.exports = class MercedesMeApp extends OAuth2App {
+module.exports = class MieleAtHomeApp extends OAuth2App {
     static OAUTH2_CLIENT = MieleAtHomeOAuthClient; // Default: OAuth2Client
     static OAUTH2_DEBUG = false; // Default: false
     static OAUTH2_MULTI_SESSION = false; // Default: false

@@ -3,7 +3,7 @@
 const Homey = require('homey');
 const { OAuth2Driver } = require('/lib/homey-oauth2app');
 
-module.exports = class MercedesMeDriver extends OAuth2Driver
+module.exports = class MieleAtHomeDriver extends OAuth2Driver
 {
 
     async onOAuth2Init()
