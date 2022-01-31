@@ -1,0 +1,17 @@
+{
+  "name": "com.mercedes_me",
+  "version": "0.1.5",
+  "main": "app.js",
+  "devDependencies": {
+    "@types/homey": "npm:homey-apps-sdk-v3-types@^0.1.0"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.6",
+    "promise-queue": "^2.2.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AdyRock/com.mercedes_me"
+  },
+  "license": "GPL-3.0"
+}

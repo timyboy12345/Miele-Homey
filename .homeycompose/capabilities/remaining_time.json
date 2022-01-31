@@ -1,0 +1,12 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Remaining Time",
+    "nl": "Resterende Tijd"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "uiQuickAction": false,
+  "icon": "/assets/battery.svg"
+}

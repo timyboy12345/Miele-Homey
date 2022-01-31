@@ -1,0 +1,12 @@
+{
+  "type": "string",
+  "title": {
+    "en": "Program Phase",
+    "nl": "Programmafase"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "uiQuickAction": false,
+  "icon": "/assets/battery.svg"
+}

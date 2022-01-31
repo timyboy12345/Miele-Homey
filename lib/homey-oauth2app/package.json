@@ -1,0 +1,49 @@
+{
+  "_from": "homey-oauth2app@3.2.1",
+  "_id": "homey-oauth2app@3.2.1",
+  "_inBundle": false,
+  "_integrity": "sha512-uV4Mcw2gg0tKaWiIsaeQbiIfTI+rUPKGzrLZatHbBCvqv6ekZ7uN37V66dDWYn0E//0EgGwn+42bGW8YKayn5g==",
+  "_location": "/homey-oauth2app",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "homey-oauth2app@3.2.1",
+    "name": "homey-oauth2app",
+    "escapedName": "homey-oauth2app",
+    "rawSpec": "3.2.1",
+    "saveSpec": null,
+    "fetchSpec": "3.2.1"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/homey-oauth2app/-/homey-oauth2app-3.2.1.tgz",
+  "_shasum": "c41c2d0c5bd02b0d8968055d55738e82c7fb5e88",
+  "_spec": "homey-oauth2app@3.2.1",
+  "_where": "C:\\Users\\Adrian\\com.mercedes_me",
+  "author": "",
+  "bundleDependencies": false,
+  "config": {
+    "npmPublishTagProduction": "latest",
+    "npmPublishTagStaging": "beta"
+  },
+  "dependencies": {
+    "node-fetch": "^2.3.0",
+    "promise-queue": "^2.2.5"
+  },
+  "deprecated": false,
+  "description": "This module does the heavy lifting for a [Homey App](https://developer.athom.com) that talks to any OAuth2 Web API.",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-athom": "^2.0.8"
+  },
+  "license": "ISC",
+  "main": "index.js",
+  "name": "homey-oauth2app",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "3.2.1"
+}

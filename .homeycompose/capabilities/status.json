@@ -1,0 +1,12 @@
+{
+  "type": "string",
+  "title": {
+    "en": "Status",
+    "nl": "Status"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "uiQuickAction": false,
+  "icon": "/assets/battery.svg"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Spinning Speed",
+    "nl": "Toerental"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "uiQuickAction": false,
+  "icon": "/assets/battery.svg"
+}
