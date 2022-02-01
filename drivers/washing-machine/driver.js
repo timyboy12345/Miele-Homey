@@ -1,22 +1,18 @@
 'use strict';
 
-const { OAuth2Driver } = require('/lib/homey-oauth2app');
+const {OAuth2Driver} = require('/lib/homey-oauth2app');
 
-module.exports = class MieleAtHomeDryerDriver extends OAuth2Driver
-{
-
-    async onOAuth2Init()
-    {
+module.exports = class MieleAtHomeWashingMachineDriver extends OAuth2Driver {
+    async onOAuth2Init() {
 
     }
 
-    async onPairListDevices({ oAuth2Client })
-    {
+    async onPairListDevices({oAuth2Client}) {
         const things = await oAuth2Client.getDevices();
         const array = Object.values(things);
 
         // Type ID 2 = Tumble Dryer
-        return array.filter(d => d.ident.type.value_raw === 2).map(device => {
+        return array.filter(d => d.ident.type.value_raw === 1).map(device => {
             return {
                 name: device.ident.type.value_localized,
                 data: {

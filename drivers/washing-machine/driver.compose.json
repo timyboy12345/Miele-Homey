@@ -1,8 +1,8 @@
 {
-  "id": "dryer",
+  "id": "washing-machine",
   "name": {
-    "en": "Dryer",
-    "nl": "Droger"
+    "en": "Washing Machine",
+    "nl": "Wasmachine"
   },
   "class": "other",
   "capabilities": [
@@ -16,19 +16,17 @@
     "signal_failure",
     "remote_enable",
     "elapsed_time",
-    "drying_step",
+    "spinning_speed",
     "eco_feedback"
   ],
   "platforms": [
     "local"
   ],
-  "connectivity": [
-    "cloud"
-  ],
+  "connectivity": [],
   "images": {
-    "small": "/drivers/dryer/assets/images/small.jpg",
-    "large": "/drivers/dryer/assets/images/large.jpg",
-    "xlarge": "/drivers/dryer/assets/images/xlarge.jpg"
+    "small": "{{driverAssetsPath}}/images/small.jpg",
+    "large": "{{driverAssetsPath}}/images/large.jpg",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.jpg"
   },
   "pair": [
     {

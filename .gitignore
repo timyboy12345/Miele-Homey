@@ -4,3 +4,6 @@ build/
 
 # Homey Production Build
 /.homeybuild/
+
+# Private Config
+/env.json

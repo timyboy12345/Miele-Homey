@@ -17,21 +17,15 @@ module.exports = class MieleAtHomeApp extends OAuth2App {
             console.log(err);
         }
 
-        let ClientID = this.homey.settings.get('ClientID');
-        let ClientSecret = this.homey.settings.get('ClientSecret');
-        this.diagLog = '';
-
-        // TODO: Remove these
-        // ClientID = '7e274d2d-3116-48f7-bc26-e017b22ba6bd';
-        // ClientSecret = 'vOEY7djhn6K53AuB8bqBLNrnKHdftkOA';
-
-        if (ClientID && ClientSecret) {
-            this.setOAuth2Config({'clientId': ClientID, 'clientSecret': ClientSecret});
-            await this.onOAuth2Init();
-        } else {
-            this.homey.settings.set('ClientID', '');
-            this.homey.settings.set('ClientSecret', '');
-        }
+        this.enableOAuth2Debug();
+        this.setOAuth2Config({
+            client: MieleAtHomeApp.OAUTH2_CLIENT,
+            clientId: Homey.env.CLIENT_ID,
+            clientSecret: Homey.env.CLIENT_SECRET,
+            apiUrl: 'https://api.mcs3.miele.com/v1/',
+            tokenUrl: 'https://api.mcs3.miele.com/thirdparty/token/',
+            authorizationUrl: 'https://api.mcs3.miele.com/thirdparty/',
+        });
 
         if (process.env.DEBUG === '1') {
             this.homey.settings.set('debugMode', true);
@@ -39,24 +33,7 @@ module.exports = class MieleAtHomeApp extends OAuth2App {
             this.homey.settings.set('debugMode', false);
         }
 
-        this.homey.settings.on('set', async (key) => {
-            let updateConfig = false;
-            if (key === 'ClientSecret') {
-                ClientSecret = this.homey.settings.get('ClientSecret');
-                updateConfig = true;
-            } else if (key === 'ClientID') {
-                ClientID = this.homey.settings.get('ClientID');
-                updateConfig = true;
-            }
-
-            if (updateConfig && ClientID && ClientSecret) {
-                this.setOAuth2Config({'clientId': ClientID, 'clientSecret': ClientSecret});
-                await this.onOAuth2Init();
-            }
-        });
-    }
-
-    async onOAuth2Init() {
-        // Do App logic here
+        // this.homeyLog = new Log({ homey: this.homey });
+        // this.log(`${this.id} running...`);
     }
 };

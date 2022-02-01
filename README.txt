@@ -1,3 +1,1 @@
-Check the status of your Miele@Home devices in Homey
-
-You need a free Miele developer account to use this app to get a client ID and client Secret. These can be obtained at miele.com/developer
+Check the status of your Miele@Home devices in Homey. Just log in with your Miele@Home account during setup and add all your devices to your Homey.

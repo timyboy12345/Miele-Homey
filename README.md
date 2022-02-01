@@ -10,3 +10,13 @@ Although intriguing, I don't own all devices that can be controlled through Miel
 
 ## Capabilities
 Miele has published a spreadsheet containing all the capabilities of each device. This file can be found on [miele.com/developer](https://www.miele.com/developer/assets/API_V1.x.x_capabilities_by_device.pdf).
+
+## Supported Devices
+This app supports the following devices:
+
+- Washing Machine
+- Tumble Dryer
+- Ovens
+- Dishwasher
+
+If you find yourself having a device that is not supported, but is supported by Miele, feel free to add the device and create a pull request.

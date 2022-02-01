@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "nl.arendz.miele",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "compatibility": ">=5.0.0",
   "platforms": [
     "local"
@@ -42,19 +42,71 @@
     "name": "Tim Arendsen"
   },
   "source": "https://github.com/timyboy12345/Miele-Homey",
+  "bugs": {
+    "url": "https://github.com/timyboy12345/Miele-Homey"
+  },
   "drivers": [
     {
-      "id": "dryer",
+      "id": "dishwasher",
       "name": {
-        "en": "Dryer",
-        "nl": "Droger"
+        "en": "Dishwasher",
+        "nl": "Vaatwasser"
       },
+      "class": "other",
+      "capabilities": [
+        "program_id",
+        "status",
+        "program_type",
+        "program_phase",
+        "remaining_time",
+        "start_time",
+        "signal_info",
+        "signal_failure",
+        "remote_enable",
+        "elapsed_time",
+        "eco_feedback"
+      ],
       "platforms": [
         "local"
       ],
       "connectivity": [
         "cloud"
       ],
+      "images": {
+        "small": "/drivers/dishwasher/assets/images/small.png",
+        "large": "/drivers/dishwasher/assets/images/large.png",
+        "xlarge": "/drivers/dishwasher/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ]
+    },
+    {
+      "id": "dryer",
+      "name": {
+        "en": "Dryer",
+        "nl": "Droger"
+      },
       "class": "other",
       "capabilities": [
         "program_id",
@@ -70,9 +122,129 @@
         "drying_step",
         "eco_feedback"
       ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
       "images": {
         "small": "/drivers/dryer/assets/images/small.jpg",
-        "large": "/drivers/dryer/assets/images/large.jpg"
+        "large": "/drivers/dryer/assets/images/large.jpg",
+        "xlarge": "/drivers/dryer/assets/images/xlarge.jpg"
+      },
+      "pair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ]
+    },
+    {
+      "id": "oven",
+      "name": {
+        "en": "Oven",
+        "nl": "Oven"
+      },
+      "class": "other",
+      "capabilities": [
+        "program_id",
+        "status",
+        "program_type",
+        "program_phase",
+        "remaining_time",
+        "start_time",
+        "start_time",
+        "target_temperature",
+        "temperature",
+        "signal_info",
+        "signal_failure",
+        "signal_door",
+        "remote_enable",
+        "light",
+        "elapsed_time"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/oven/assets/images/small.png",
+        "large": "/drivers/oven/assets/images/large.png",
+        "xlarge": "/drivers/oven/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ]
+    },
+    {
+      "id": "washing-machine",
+      "name": {
+        "en": "Washing Machine",
+        "nl": "Wasmachine"
+      },
+      "class": "other",
+      "capabilities": [
+        "program_id",
+        "status",
+        "program_type",
+        "program_phase",
+        "remaining_time",
+        "start_time",
+        "signal_info",
+        "signal_failure",
+        "remote_enable",
+        "elapsed_time",
+        "spinning_speed",
+        "eco_feedback"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [],
+      "images": {
+        "small": "/drivers/washing-machine/assets/images/small.jpg",
+        "large": "/drivers/washing-machine/assets/images/large.jpg",
+        "xlarge": "/drivers/washing-machine/assets/images/xlarge.jpg"
       },
       "pair": [
         {
@@ -99,6 +271,66 @@
       ]
     }
   ],
+  "flow": {
+    "triggers": [
+      {
+        "id": "elapsed_time_changed",
+        "title": {
+          "en": "Elapsed Time updated",
+          "nl": "Verstreken Tijd veranderde"
+        },
+        "tokens": [
+          {
+            "name": "elapsed_time",
+            "type": "number",
+            "title": {
+              "en": "Elapsed Time",
+              "nl": "Verstreken Tijd"
+            },
+            "example": {
+              "en": "5",
+              "nl": "5"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dryer"
+          }
+        ]
+      },
+      {
+        "id": "status_changed",
+        "title": {
+          "en": "Status updated",
+          "nl": "Status veranderde"
+        },
+        "tokens": [
+          {
+            "name": "status",
+            "type": "string",
+            "title": {
+              "en": "Status",
+              "nl": "Status"
+            },
+            "example": {
+              "en": "On",
+              "nl": "Aan"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dryer"
+          }
+        ]
+      }
+    ]
+  },
   "capabilities": {
     "drying_step": {
       "type": "string",
@@ -114,17 +346,21 @@
       "insight": true
     },
     "eco_feedback": {
-      "type": "string",
+      "type": "number",
       "title": {
-        "en": "Eco Feedback",
-        "nl": "Eco Feedback"
+        "en": "Energy Forecast",
+        "nl": "Voorspelling Energieverbruik"
       },
       "getable": true,
       "setable": false,
       "uiComponent": "sensor",
       "uiQuickAction": false,
       "icon": "/assets/capabilities/droplet.svg",
-      "insight": true
+      "insight": true,
+      "units": {
+        "en": "Watt",
+        "nl": "Watt"
+      }
     },
     "elapsed_time": {
       "type": "number",
@@ -141,6 +377,18 @@
         "en": "Minutes",
         "nl": "Minuten"
       }
+    },
+    "light": {
+      "type": "boolean",
+      "title": {
+        "en": "Light on",
+        "nl": "Lamp aan"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "uiQuickAction": false,
+      "icon": "/assets/capabilities/alert-octagon.svg"
     },
     "program_id": {
       "type": "string",
@@ -206,6 +454,18 @@
       "uiQuickAction": false,
       "icon": "/assets/capabilities/bluetooth.svg"
     },
+    "signal_door": {
+      "type": "boolean",
+      "title": {
+        "en": "Door opened",
+        "nl": "Deur geopend"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "uiQuickAction": false,
+      "icon": "/assets/capabilities/alert-octagon.svg"
+    },
     "signal_failure": {
       "type": "boolean",
       "title": {
@@ -270,6 +530,32 @@
       "uiComponent": "sensor",
       "uiQuickAction": false,
       "icon": "/assets/capabilities/power.svg",
+      "insight": true
+    },
+    "target_temperature": {
+      "type": "string",
+      "title": {
+        "en": "Target Temperature",
+        "nl": "Ingestelde Temperatuur"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "uiQuickAction": false,
+      "icon": "/assets/capabilities/wind.svg",
+      "insight": true
+    },
+    "temperature": {
+      "type": "number",
+      "title": {
+        "en": "Temperature",
+        "nl": "Temperatuur"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "uiQuickAction": false,
+      "icon": "/assets/capabilities/wind.svg",
       "insight": true
     }
   }

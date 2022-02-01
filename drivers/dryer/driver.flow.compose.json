@@ -1,0 +1,46 @@
+{
+  "triggers": [
+    {
+      "id": "elapsed_time_changed",
+      "title": {
+        "en": "Elapsed Time updated",
+        "nl": "Verstreken Tijd veranderde"
+      },
+      "tokens": [
+        {
+          "name": "elapsed_time",
+          "type": "number",
+          "title": {
+            "en": "Elapsed Time",
+            "nl": "Verstreken Tijd"
+          },
+          "example": {
+            "en": "5",
+            "nl": "5"
+          }
+        }
+      ]
+    },
+    {
+      "id": "status_changed",
+      "title": {
+        "en": "Status updated",
+        "nl": "Status veranderde"
+      },
+      "tokens": [
+        {
+          "name": "status",
+          "type": "string",
+          "title": {
+            "en": "Status",
+            "nl": "Status"
+          },
+          "example": {
+            "en": "On",
+            "nl": "Aan"
+          }
+        }
+      ]
+    }
+  ]
+}

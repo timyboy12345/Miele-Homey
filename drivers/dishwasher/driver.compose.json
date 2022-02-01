@@ -1,8 +1,8 @@
 {
-  "id": "dryer",
+  "id": "dishwasher",
   "name": {
-    "en": "Dryer",
-    "nl": "Droger"
+    "en": "Dishwasher",
+    "nl": "Vaatwasser"
   },
   "class": "other",
   "capabilities": [
@@ -16,7 +16,6 @@
     "signal_failure",
     "remote_enable",
     "elapsed_time",
-    "drying_step",
     "eco_feedback"
   ],
   "platforms": [
@@ -26,9 +25,9 @@
     "cloud"
   ],
   "images": {
-    "small": "/drivers/dryer/assets/images/small.jpg",
-    "large": "/drivers/dryer/assets/images/large.jpg",
-    "xlarge": "/drivers/dryer/assets/images/xlarge.jpg"
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
   },
   "pair": [
     {
