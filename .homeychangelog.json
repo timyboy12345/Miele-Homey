@@ -6,5 +6,9 @@
   "0.1.0": {
     "en": "Added ovens and dishwashers",
     "nl": "Ovens en vaatwassers toegevoegd"
+  },
+  "0.1.1": {
+    "en": "Fixed OAuth process, fixed icons on iOS devices",
+    "nl": "OAuth flow gerepareerd, icoontjes op iPhones gerepareerd"
   }
 }

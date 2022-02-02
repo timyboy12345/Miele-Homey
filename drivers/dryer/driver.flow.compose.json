@@ -1,10 +1,73 @@
 {
   "triggers": [
     {
+      "id": "program_id_changed",
+      "title": {
+        "en": "Program Updated",
+        "nl": "Programma Geupdate"
+      },
+      "tokens": [
+        {
+          "name": "program_id",
+          "type": "string",
+          "title": {
+            "en": "Program",
+            "nl": "Programma"
+          },
+          "example": {
+            "en": "Wool",
+            "nl": "Wol"
+          }
+        }
+      ]
+    },
+    {
+      "id": "status_changed",
+      "title": {
+        "en": "Status Updated",
+        "nl": "Status Geupdate"
+      },
+      "tokens": [
+        {
+          "name": "status",
+          "type": "string",
+          "title": {
+            "en": "Status",
+            "nl": "Status"
+          },
+          "example": {
+            "en": "On",
+            "nl": "Aan"
+          }
+        }
+      ]
+    },
+    {
+      "id": "signal_failure_updated",
+      "title": {
+        "en": "Failure Message Updated",
+        "nl": "Waarschuwing Geupdate"
+      },
+      "tokens": [
+        {
+          "name": "signal_failure",
+          "type": "string",
+          "title": {
+            "en": "Warning",
+            "nl": "Waarschuwing"
+          },
+          "example": {
+            "en": "Error 2",
+            "nl": "Foutmelding 2"
+          }
+        }
+      ]
+    },
+    {
       "id": "elapsed_time_changed",
       "title": {
-        "en": "Elapsed Time updated",
-        "nl": "Verstreken Tijd veranderde"
+        "en": "Elapsed Time Updated",
+        "nl": "Verstreken Tijd Geupdate"
       },
       "tokens": [
         {
@@ -22,22 +85,22 @@
       ]
     },
     {
-      "id": "status_changed",
+      "id": "drying_step_updated",
       "title": {
-        "en": "Status updated",
-        "nl": "Status veranderde"
+        "en": "Drying Step Updated",
+        "nl": "Droogstap Geupdate"
       },
       "tokens": [
         {
-          "name": "status",
+          "name": "drying_step",
           "type": "string",
           "title": {
-            "en": "Status",
-            "nl": "Status"
+            "en": "Drying Step",
+            "nl": "Droogstap"
           },
           "example": {
-            "en": "On",
-            "nl": "Aan"
+            "en": "Stap 2",
+            "nl": "Stap 3"
           }
         }
       ]

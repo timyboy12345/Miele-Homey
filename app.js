@@ -22,9 +22,9 @@ module.exports = class MieleAtHomeApp extends OAuth2App {
             client: MieleAtHomeApp.OAUTH2_CLIENT,
             clientId: Homey.env.CLIENT_ID,
             clientSecret: Homey.env.CLIENT_SECRET,
-            apiUrl: 'https://api.mcs3.miele.com/v1/',
-            tokenUrl: 'https://api.mcs3.miele.com/thirdparty/token/',
-            authorizationUrl: 'https://api.mcs3.miele.com/thirdparty/',
+            apiUrl: MieleAtHomeOAuthClient.API_URL,
+            tokenUrl: MieleAtHomeOAuthClient.TOKEN_URL,
+            authorizationUrl: MieleAtHomeOAuthClient.AUTHORIZATION_URL,
         });
 
         if (process.env.DEBUG === '1') {

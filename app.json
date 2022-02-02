@@ -45,6 +45,206 @@
   "bugs": {
     "url": "https://github.com/timyboy12345/Miele-Homey"
   },
+  "flow": {
+    "triggers": [
+      {
+        "id": "elapsed_time_changed_dishwasher",
+        "title": {
+          "en": "Elapsed Time updated",
+          "nl": "Verstreken Tijd veranderde"
+        },
+        "tokens": [
+          {
+            "name": "elapsed_time",
+            "type": "number",
+            "title": {
+              "en": "Elapsed Time",
+              "nl": "Verstreken Tijd"
+            },
+            "example": {
+              "en": "5",
+              "nl": "5"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dishwasher"
+          }
+        ]
+      },
+      {
+        "id": "status_changed_dishwasher",
+        "title": {
+          "en": "Status updated",
+          "nl": "Status veranderde"
+        },
+        "tokens": [
+          {
+            "name": "status",
+            "type": "string",
+            "title": {
+              "en": "Status",
+              "nl": "Status"
+            },
+            "example": {
+              "en": "On",
+              "nl": "Aan"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dishwasher"
+          }
+        ]
+      },
+      {
+        "id": "program_id_changed",
+        "title": {
+          "en": "Program Updated",
+          "nl": "Programma Geupdate"
+        },
+        "tokens": [
+          {
+            "name": "program_id",
+            "type": "string",
+            "title": {
+              "en": "Program",
+              "nl": "Programma"
+            },
+            "example": {
+              "en": "Wool",
+              "nl": "Wol"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dryer"
+          }
+        ]
+      },
+      {
+        "id": "status_changed",
+        "title": {
+          "en": "Status Updated",
+          "nl": "Status Geupdate"
+        },
+        "tokens": [
+          {
+            "name": "status",
+            "type": "string",
+            "title": {
+              "en": "Status",
+              "nl": "Status"
+            },
+            "example": {
+              "en": "On",
+              "nl": "Aan"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dryer"
+          }
+        ]
+      },
+      {
+        "id": "signal_failure_updated",
+        "title": {
+          "en": "Failure Message Updated",
+          "nl": "Waarschuwing Geupdate"
+        },
+        "tokens": [
+          {
+            "name": "signal_failure",
+            "type": "string",
+            "title": {
+              "en": "Warning",
+              "nl": "Waarschuwing"
+            },
+            "example": {
+              "en": "Error 2",
+              "nl": "Foutmelding 2"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dryer"
+          }
+        ]
+      },
+      {
+        "id": "elapsed_time_changed",
+        "title": {
+          "en": "Elapsed Time Updated",
+          "nl": "Verstreken Tijd Geupdate"
+        },
+        "tokens": [
+          {
+            "name": "elapsed_time",
+            "type": "number",
+            "title": {
+              "en": "Elapsed Time",
+              "nl": "Verstreken Tijd"
+            },
+            "example": {
+              "en": "5",
+              "nl": "5"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dryer"
+          }
+        ]
+      },
+      {
+        "id": "drying_step_updated",
+        "title": {
+          "en": "Drying Step Updated",
+          "nl": "Droogstap Geupdate"
+        },
+        "tokens": [
+          {
+            "name": "drying_step",
+            "type": "string",
+            "title": {
+              "en": "Drying Step",
+              "nl": "Droogstap"
+            },
+            "example": {
+              "en": "Stap 2",
+              "nl": "Stap 3"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=dryer"
+          }
+        ]
+      }
+    ]
+  },
   "drivers": [
     {
       "id": "dishwasher",
@@ -271,66 +471,6 @@
       ]
     }
   ],
-  "flow": {
-    "triggers": [
-      {
-        "id": "elapsed_time_changed",
-        "title": {
-          "en": "Elapsed Time updated",
-          "nl": "Verstreken Tijd veranderde"
-        },
-        "tokens": [
-          {
-            "name": "elapsed_time",
-            "type": "number",
-            "title": {
-              "en": "Elapsed Time",
-              "nl": "Verstreken Tijd"
-            },
-            "example": {
-              "en": "5",
-              "nl": "5"
-            }
-          }
-        ],
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=dryer"
-          }
-        ]
-      },
-      {
-        "id": "status_changed",
-        "title": {
-          "en": "Status updated",
-          "nl": "Status veranderde"
-        },
-        "tokens": [
-          {
-            "name": "status",
-            "type": "string",
-            "title": {
-              "en": "Status",
-              "nl": "Status"
-            },
-            "example": {
-              "en": "On",
-              "nl": "Aan"
-            }
-          }
-        ],
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=dryer"
-          }
-        ]
-      }
-    ]
-  },
   "capabilities": {
     "drying_step": {
       "type": "string",
