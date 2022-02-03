@@ -1,9 +1,9 @@
-# Miele@Homey
+# Miele@Homey ⚙️
 
-View the status of your Miele@Home devices on your Homey
+View the status of your Miele@Home devices on your Homey through the Miele API.
 
-## Requirements
-This app requires a development account, which can be freely obtained from https://www.miele.com/f/com/en/register_api.aspx with your email-address and a application name.
+## Retrieving Data
+This package retrieves data through the Miele API, using the oAuth Protocol.
 
 ## Adding devices
 Although intriguing, I don't own all devices that can be controlled through Miele@Home
@@ -20,3 +20,9 @@ This app supports the following devices:
 - Dishwasher
 
 If you find yourself having a device that is not supported, but is supported by Miele, feel free to add the device and create a pull request.
+
+## Development
+If you want to add any devices, or improve any code currently committed, it is important you read the information below.
+
+### Miele Developer Account
+To deploy this application to your Homey, you need to copy `example.env.json` to `env.json` and fill in the client token and secret. To obtain these credentials, you have to submit your email-address, together with an application name, to Miele. Fill in the form at https://www.miele.com/f/com/en/register_api.aspx to get your credentials.

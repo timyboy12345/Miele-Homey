@@ -1,6 +1,6 @@
 {
   "id": "nl.arendz.miele",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "compatibility": ">=5.0.0",
   "platforms": [
     "local"
@@ -28,7 +28,7 @@
   "contributing": {
     "donate": {
       "paypal": {
-        "username": "timyboy12345"
+        "username": "Timyboy"
       }
     }
   },
@@ -41,6 +41,7 @@
     "name": "Tim Arendsen"
   },
   "source": "https://github.com/timyboy12345/Miele-Homey",
+  "homeyCommunityTopicId": 59686,
   "bugs": {
     "url": "https://github.com/timyboy12345/Miele-Homey"
   }

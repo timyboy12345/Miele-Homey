@@ -1,6 +1,6 @@
 {
-  "name": "com.mercedes_me",
-  "version": "0.1.5",
+  "name": "nl.arendz.miele",
+  "version": "0.1.1",
   "main": "app.js",
   "devDependencies": {
     "@types/homey": "npm:homey-apps-sdk-v3-types@^0.1.0"

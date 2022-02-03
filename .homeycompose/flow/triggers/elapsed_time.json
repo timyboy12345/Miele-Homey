@@ -1,0 +1,28 @@
+{
+  "id": "elapsed_time_changed",
+  "title": {
+    "en": "Elapsed Time Updated",
+    "nl": "Verstreken Tijd Geupdate"
+  },
+  "tokens": [
+    {
+      "name": "elapsed_time",
+      "type": "number",
+      "title": {
+        "en": "Elapsed Time",
+        "nl": "Verstreken Tijd"
+      },
+      "example": {
+        "en": "5",
+        "nl": "5"
+      }
+    }
+  ],
+  "args": [
+    {
+      "name": "device",
+      "type": "device",
+      "filter": "driver_id=dishwasher|dryer|oven|washing-machine"
+    }
+  ]
+}

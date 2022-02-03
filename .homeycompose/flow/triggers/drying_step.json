@@ -1,0 +1,28 @@
+{
+  "id": "drying_step_changed",
+  "title": {
+    "en": "Drying Step Updated",
+    "nl": "Droogstap Geupdate"
+  },
+  "tokens": [
+    {
+      "name": "drying_step",
+      "type": "string",
+      "title": {
+        "en": "Drying Step",
+        "nl": "Droogstap"
+      },
+      "example": {
+        "en": "Stap 2",
+        "nl": "Stap 3"
+      }
+    }
+  ],
+  "args": [
+    {
+      "name": "device",
+      "type": "device",
+      "filter": "driver_id=dryer"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "status_changed",
+  "title": {
+    "en": "Status Updated",
+    "nl": "Status Geupdate"
+  },
+  "tokens": [
+    {
+      "name": "status",
+      "type": "string",
+      "title": {
+        "en": "Status",
+        "nl": "Status"
+      },
+      "example": {
+        "en": "On",
+        "nl": "Aan"
+      }
+    }
+  ],
+  "args": [
+    {
+      "name": "device",
+      "type": "device",
+      "filter": "driver_id=dishwasher|dryer|oven|washing-machine"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "signal_failure_changed",
+  "title": {
+    "en": "Failure Message Updated",
+    "nl": "Waarschuwing Geupdate"
+  },
+  "tokens": [
+    {
+      "name": "signal_failure",
+      "type": "string",
+      "title": {
+        "en": "Warning",
+        "nl": "Waarschuwing"
+      },
+      "example": {
+        "en": "Error 2",
+        "nl": "Foutmelding 2"
+      }
+    }
+  ],
+  "args": [
+    {
+      "name": "device",
+      "type": "device",
+      "filter": "driver_id=dishwasher|dryer|oven|washing-machine"
+    }
+  ]
+}

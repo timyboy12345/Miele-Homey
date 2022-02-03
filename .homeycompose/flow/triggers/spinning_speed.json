@@ -1,0 +1,28 @@
+{
+  "id": "spinning_speed_changed",
+  "title": {
+    "en": "Spinning Speed Updated",
+    "nl": "Rotatiesnelheid Geupdate"
+  },
+  "tokens": [
+    {
+      "name": "spinning_speed",
+      "type": "number",
+      "title": {
+        "en": "Spinning Speed",
+        "nl": "Rotatiesnelheid"
+      },
+      "example": {
+        "en": "100",
+        "nl": "100"
+      }
+    }
+  ],
+  "args": [
+    {
+      "name": "device",
+      "type": "device",
+      "filter": "driver_id=washing-machine"
+    }
+  ]
+}

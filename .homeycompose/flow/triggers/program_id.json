@@ -1,0 +1,28 @@
+{
+  "id": "program_id_changed",
+  "title": {
+    "en": "Program Updated",
+    "nl": "Programma Geupdate"
+  },
+  "tokens": [
+    {
+      "name": "program_id",
+      "type": "string",
+      "title": {
+        "en": "Program",
+        "nl": "Programma"
+      },
+      "example": {
+        "en": "Wool",
+        "nl": "Wol"
+      }
+    }
+  ],
+  "args": [
+    {
+      "name": "device",
+      "type": "device",
+      "filter": "driver_id=dishwasher|dryer|oven|washing-machine"
+    }
+  ]
+}

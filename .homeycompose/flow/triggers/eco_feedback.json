@@ -1,0 +1,28 @@
+{
+  "id": "eco_feedback_changed",
+  "title": {
+    "en": "Eco Feedback Updated",
+    "nl": "Eco Feedback Geupdate"
+  },
+  "tokens": [
+    {
+      "name": "eco_feedback",
+      "type": "number",
+      "title": {
+        "en": "Eco Feedback",
+        "nl": "Eco Feedback"
+      },
+      "example": {
+        "en": "5",
+        "nl": "5"
+      }
+    }
+  ],
+  "args": [
+    {
+      "name": "device",
+      "type": "device",
+      "filter": "driver_id=dryer|dishwasher|washing-machine"
+    }
+  ]
+}

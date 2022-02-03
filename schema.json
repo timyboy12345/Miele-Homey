@@ -1,0 +1,217 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "compatibility": {
+      "type": "string"
+    },
+    "platforms": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "sdk": {
+      "type": "integer"
+    },
+    "brandColor": {
+      "type": "string"
+    },
+    "name": {
+      "type": "object",
+      "properties": {
+        "en": {
+          "type": "string"
+        },
+        "nl": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "en",
+        "nl"
+      ]
+    },
+    "description": {
+      "type": "object",
+      "properties": {
+        "en": {
+          "type": "string"
+        },
+        "nl": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "en",
+        "nl"
+      ]
+    },
+    "category": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "object",
+      "properties": {
+        "en": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "nl": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "required": [
+        "en",
+        "nl"
+      ]
+    },
+    "permissions": {
+      "type": "array",
+      "items": {}
+    },
+    "contributing": {
+      "type": "object",
+      "properties": {
+        "donate": {
+          "type": "object",
+          "properties": {
+            "paypal": {
+              "type": "object",
+              "properties": {
+                "username": {
+                  "type": "string",
+                  "description": "The username of the Paypal.me address where donations can be made. Not allowed when the app is based on a fork."
+                }
+              },
+              "required": [
+                "username"
+              ]
+            }
+          },
+          "required": [
+            "paypal"
+          ]
+        }
+      },
+      "required": [
+        "donate"
+      ]
+    },
+    "contributors": {
+      "type": "object",
+      "properties": {
+        "developers":{
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "email"
+            ]
+          }
+        }
+      }
+    },
+    "images": {
+      "type": "object",
+      "properties": {
+        "small": {
+          "type": "string"
+        },
+        "large": {
+          "type": "string"
+        },
+        "xlarge": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "small",
+        "large",
+        "xlarge"
+      ]
+    },
+    "author": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ]
+    },
+    "source": {
+      "type": "string",
+      "description": "The source code for this app is stored on this URL"
+    },
+    "homeyCommunityTopicId": {
+      "type": "integer",
+      "description": "The ID of the Homey Community Forum topic where this app is discussed"
+    },
+    "bugs": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string",
+          "description": "On this URL bugs can be reported to the owner/maintainers"
+        }
+      },
+      "required": [
+        "url"
+      ]
+    },
+    "homepage": {
+      "type": "string",
+      "description": "A company, brand or personal page to give users some insight in the app. Should start with https://",
+      "pattern": "(https://).+"
+    },
+    "support": {
+      "type": "string",
+      "description": "Either an email-address or URL where users can get support for this app.",
+      "pattern": "(https://).+|(mailto:).+"
+    }
+  },
+  "required": [
+    "id",
+    "version",
+    "compatibility",
+    "platforms",
+    "sdk",
+    "brandColor",
+    "name",
+    "description",
+    "category",
+    "tags",
+    "images",
+    "permissions",
+    "author"
+  ]
+}

@@ -10,5 +10,9 @@
   "0.1.1": {
     "en": "Fixed OAuth process, fixed icons on iOS devices",
     "nl": "OAuth flow gerepareerd, icoontjes op iPhones gerepareerd"
+  },
+  "0.1.2": {
+    "en": "Added flow triggers to all supported devices",
+    "nl": "Flow Triggers toegevoegd voor alle ondersteunde apparaten"
   }
 }
