@@ -11,7 +11,7 @@ class MyDriver extends OAuth2Driver {
         const things = await oAuth2Client.getDevices();
         const array = Object.values(things);
 
-        // Type ID 2 = Tumble Dryer
+        // Type ID 12 = Oven
         return array.filter(d => d.ident.type.value_raw === 12).map(device => {
             return {
                 name: device.ident.type.value_localized,

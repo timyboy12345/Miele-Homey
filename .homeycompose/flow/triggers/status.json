@@ -22,7 +22,7 @@
     {
       "name": "device",
       "type": "device",
-      "filter": "driver_id=dishwasher|dryer|oven|washing-machine"
+      "filter": "driver_id=dishwasher|dryer|freezer|fridge|fridge-freezer|microwave|oven|oven-microwave|steam-oven|washer-dryer|washing-machine"
     }
   ]
 }

@@ -1,0 +1,57 @@
+{
+  "id": "dryer",
+  "name": {
+    "en": "Dryer",
+    "nl": "Droger"
+  },
+  "class": "other",
+  "capabilities": [
+    "program_id",
+    "status",
+    "program_type",
+    "program_phase",
+    "remaining_time",
+    "start_time",
+    "signal_info",
+    "signal_failure",
+    "remote_enable",
+    "elapsed_time",
+    "spinning_speed",
+    "drying_step",
+    "eco_feedback"
+  ],
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "cloud"
+  ],
+  "images": {
+    "small": "/drivers/dryer/assets/images/small.jpg",
+    "large": "/drivers/dryer/assets/images/large.jpg",
+    "xlarge": "/drivers/dryer/assets/images/xlarge.jpg"
+  },
+  "pair": [
+    {
+      "id": "login_oauth2",
+      "template": "login_oauth2"
+    },
+    {
+      "id": "list_devices",
+      "template": "list_devices",
+      "navigation": {
+        "next": "add_devices"
+      }
+    },
+    {
+      "id": "add_devices",
+      "template": "add_devices"
+    }
+  ],
+  "repair": [
+    {
+      "id": "login_oauth2",
+      "template": "login_oauth2"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "microwave",
+  "name": {
+    "en": "Microwave",
+    "nl": "Magnetron"
+  },
+  "class": "other",
+  "capabilities": [
+    "program_id",
+    "status",
+    "program_type",
+    "program_phase",
+    "remaining_time",
+    "start_time",
+    "start_time",
+    "target_temperature",
+    "temperature",
+    "signal_info",
+    "signal_failure",
+    "signal_door",
+    "remote_enable",
+    "light",
+    "elapsed_time"
+  ],
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "cloud"
+  ],
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
+  },
+  "pair": [
+    {
+      "id": "login_oauth2",
+      "template": "login_oauth2"
+    },
+    {
+      "id": "list_devices",
+      "template": "list_devices",
+      "navigation": {
+        "next": "add_devices"
+      }
+    },
+    {
+      "id": "add_devices",
+      "template": "add_devices"
+    }
+  ],
+  "repair": [
+    {
+      "id": "login_oauth2",
+      "template": "login_oauth2"
+    }
+  ]
+}

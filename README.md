@@ -14,12 +14,32 @@ Miele has published a spreadsheet containing all the capabilities of each device
 ## Supported Devices
 This app supports the following devices:
 
-- Washing Machine
-- Tumble Dryer
-- Ovens
-- Dishwasher
+- ✅ 1 Washing Machine
+- ✅ 2 Tumble Dryer
+- ✅ 7 Dishwasher
+- ✅ 12 Oven
+- ✅ 13 Oven Microwave
+- ❌ 14 Hob Highlight
+- ✅ 15 Steam Oven
+- ✅ 16 Microwave
+- ❌ 17 Coffee System
+- ❌ 18 Hood
+- ✅ 19 Fridge
+- ✅ 20 Freezer
+- ✅ 21 Fridge / Freezer
+- ❌ 23 Robot Vacuum Cleaner
+- ✅ 24 Washer Dryer
+- ❌ 25 Dish Warmer
+- ❌ 27 Hob Induction
+- ✅ 31 Steam Oven Combi (#15)
+- ❌ 32 Wine Cabinet
+- ❌ 33 Wine Conditioning Unit
+- ❌ 34 Wine Storage Conditioning Unit
+- ✅ 45 Steam Oven Micro
+- ❌ 67 Dialogoven
+- ❌ 68 Wine Cabinet / Freezer
 
-If you find yourself having a device that is not supported, but is supported by Miele, feel free to add the device and create a pull request.
+If you find yourself having a device that is not supported in this app, but is supported by Miele@Home, feel free to add the device and create a pull request.
 
 ## Development
 If you want to add any devices, or improve any code currently committed, it is important you read the information below.

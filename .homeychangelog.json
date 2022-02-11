@@ -14,5 +14,8 @@
   "0.1.2": {
     "en": "Added flow triggers to all supported devices",
     "nl": "Flow Triggers toegevoegd voor alle ondersteunde apparaten"
+  },
+  "0.1.3": {
+    "en": "Added freezers, fridges, microwaves, steam-ovens and washer-dryers"
   }
 }

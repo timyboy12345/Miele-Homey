@@ -11,7 +11,7 @@ module.exports = class MieleAtHomeWashingMachineDriver extends OAuth2Driver {
         const things = await oAuth2Client.getDevices();
         const array = Object.values(things);
 
-        // Type ID 2 = Tumble Dryer
+        // Type ID 1 = Washing Machine
         return array.filter(d => d.ident.type.value_raw === 1).map(device => {
             return {
                 name: device.ident.type.value_localized,

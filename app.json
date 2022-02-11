@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "nl.arendz.miele",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "compatibility": ">=5.0.0",
   "platforms": [
     "local"
@@ -72,7 +72,7 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=dryer"
+            "filter": "driver_id=dryer|washer-dryer"
           }
         ]
       },
@@ -100,7 +100,7 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=dryer|dishwasher|washing-machine"
+            "filter": "driver_id=dryer|dishwasher|washer-dryer|washing-machine"
           }
         ]
       },
@@ -128,7 +128,7 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=dishwasher|dryer|oven|washing-machine"
+            "filter": "driver_id=dishwasher|dryer|microwave|oven|oven-microwave|steam-oven|washer-dryer|washing-machine"
           }
         ]
       },
@@ -156,7 +156,7 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=dishwasher|dryer|oven|washing-machine"
+            "filter": "driver_id=dishwasher|dryer|microwave|oven|oven-microwave|steam-oven|washer-dryer|washing-machine"
           }
         ]
       },
@@ -184,7 +184,7 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=dishwasher|dryer|oven|washing-machine"
+            "filter": "driver_id=dishwasher|dryer|freezer|fridge|fridge-freezer|microwave|oven|oven-microwave|steam-oven|washer-dryer|washing-machine"
           }
         ]
       },
@@ -212,7 +212,7 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=washing-machine"
+            "filter": "driver_id=washer-dryer|washing-machine"
           }
         ]
       },
@@ -240,7 +240,7 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=dishwasher|dryer|oven|washing-machine"
+            "filter": "driver_id=dishwasher|dryer|freezer|fridge|fridge-freezer|microwave|oven|oven-microwave|steam-oven|washer-dryer|washing-machine"
           }
         ]
       }
@@ -359,6 +359,221 @@
       ]
     },
     {
+      "id": "freezer",
+      "name": {
+        "en": "Freezer",
+        "nl": "Vriezer"
+      },
+      "class": "other",
+      "capabilities": [
+        "status",
+        "target_temperature",
+        "temperature",
+        "signal_info",
+        "signal_failure",
+        "signal_door",
+        "remote_enable",
+        "light"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/freezer/assets/images/small.png",
+        "large": "/drivers/freezer/assets/images/large.png",
+        "xlarge": "/drivers/freezer/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ]
+    },
+    {
+      "id": "fridge",
+      "name": {
+        "en": "Fridge",
+        "nl": "Koelkast"
+      },
+      "class": "other",
+      "capabilities": [
+        "status",
+        "target_temperature",
+        "temperature",
+        "signal_info",
+        "signal_failure",
+        "signal_door",
+        "remote_enable",
+        "light"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/fridge/assets/images/small.png",
+        "large": "/drivers/fridge/assets/images/large.png",
+        "xlarge": "/drivers/fridge/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ]
+    },
+    {
+      "id": "fridge-freezer",
+      "name": {
+        "en": "Fridge Freezer Combi",
+        "nl": "Koelkast Vriezer combinatie"
+      },
+      "class": "other",
+      "capabilities": [
+        "status",
+        "target_temperature",
+        "temperature",
+        "signal_info",
+        "signal_failure",
+        "signal_door",
+        "remote_enable",
+        "light"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/fridge-freezer/assets/images/small.png",
+        "large": "/drivers/fridge-freezer/assets/images/large.png",
+        "xlarge": "/drivers/fridge-freezer/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ]
+    },
+    {
+      "id": "microwave",
+      "name": {
+        "en": "Microwave",
+        "nl": "Magnetron"
+      },
+      "class": "other",
+      "capabilities": [
+        "program_id",
+        "status",
+        "program_type",
+        "program_phase",
+        "remaining_time",
+        "start_time",
+        "start_time",
+        "target_temperature",
+        "temperature",
+        "signal_info",
+        "signal_failure",
+        "signal_door",
+        "remote_enable",
+        "light",
+        "elapsed_time"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/microwave/assets/images/small.png",
+        "large": "/drivers/microwave/assets/images/large.png",
+        "xlarge": "/drivers/microwave/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ]
+    },
+    {
       "id": "oven",
       "name": {
         "en": "Oven",
@@ -392,6 +607,181 @@
         "small": "/drivers/oven/assets/images/small.png",
         "large": "/drivers/oven/assets/images/large.png",
         "xlarge": "/drivers/oven/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ]
+    },
+    {
+      "id": "oven-microwave",
+      "name": {
+        "en": "Microwave Oven",
+        "nl": "Combimagnetron"
+      },
+      "class": "other",
+      "capabilities": [
+        "program_id",
+        "status",
+        "program_type",
+        "program_phase",
+        "remaining_time",
+        "start_time",
+        "start_time",
+        "target_temperature",
+        "temperature",
+        "signal_info",
+        "signal_failure",
+        "signal_door",
+        "remote_enable",
+        "light",
+        "elapsed_time"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/oven-microwave/assets/images/small.png",
+        "large": "/drivers/oven-microwave/assets/images/large.png",
+        "xlarge": "/drivers/oven-microwave/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ]
+    },
+    {
+      "id": "steam-oven",
+      "name": {
+        "en": "Steam Oven",
+        "nl": "Stoomoven"
+      },
+      "class": "other",
+      "capabilities": [
+        "program_id",
+        "status",
+        "program_type",
+        "program_phase",
+        "remaining_time",
+        "start_time",
+        "start_time",
+        "target_temperature",
+        "temperature",
+        "signal_info",
+        "signal_failure",
+        "signal_door",
+        "remote_enable",
+        "light",
+        "elapsed_time"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/steam-oven/assets/images/small.png",
+        "large": "/drivers/steam-oven/assets/images/large.png",
+        "xlarge": "/drivers/steam-oven/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ]
+    },
+    {
+      "id": "washer-dryer",
+      "name": {
+        "en": "Dryer",
+        "nl": "Droger"
+      },
+      "class": "other",
+      "capabilities": [
+        "program_id",
+        "status",
+        "program_type",
+        "program_phase",
+        "remaining_time",
+        "start_time",
+        "signal_info",
+        "signal_failure",
+        "remote_enable",
+        "elapsed_time",
+        "spinning_speed",
+        "drying_step",
+        "eco_feedback"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/dryer/assets/images/small.jpg",
+        "large": "/drivers/dryer/assets/images/large.jpg",
+        "xlarge": "/drivers/dryer/assets/images/xlarge.jpg"
       },
       "pair": [
         {

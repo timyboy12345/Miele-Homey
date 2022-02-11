@@ -22,7 +22,7 @@
     {
       "name": "device",
       "type": "device",
-      "filter": "driver_id=dryer"
+      "filter": "driver_id=dryer|washer-dryer"
     }
   ]
 }
