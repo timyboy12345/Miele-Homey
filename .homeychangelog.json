@@ -17,5 +17,8 @@
   },
   "0.1.3": {
     "en": "Added freezers, fridges, microwaves, steam-ovens and washer-dryers"
+  },
+  "0.1.4": {
+    "en": "Added coffee system"
   }
 }

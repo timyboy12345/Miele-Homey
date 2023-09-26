@@ -22,7 +22,7 @@ This app supports the following devices:
 - ❌ 14 Hob Highlight
 - ✅ 15 Steam Oven
 - ✅ 16 Microwave
-- ❌ 17 Coffee System
+- ✅ 17 Coffee System
 - ❌ 18 Hood
 - ✅ 19 Fridge
 - ✅ 20 Freezer

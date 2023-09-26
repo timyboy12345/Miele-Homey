@@ -1,6 +1,6 @@
 {
   "id": "nl.arendz.miele",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "compatibility": ">=5.0.0",
   "platforms": [
     "local"
